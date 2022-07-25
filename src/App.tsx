@@ -1,11 +1,13 @@
-import Header from "./components/Header/Header";
+import Layout from "./components/Layout/Layout";
+import Home from "./pages/Home/Home";
+import Material from "./pages/Material/Material";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <p>{process.env.REACT_APP_TEST}</p>
-    </div>
+    <Layout>
+      {/* <Home /> */}
+      <Material />
+    </Layout>
   );
 }
 
