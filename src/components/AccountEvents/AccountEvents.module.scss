@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-right: 13px;
+
+  & > div {
+    padding: 10px 12px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+
+    .badge {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #d63031;
+      position: absolute;
+      right: 10px;
+    }
+  }
+}

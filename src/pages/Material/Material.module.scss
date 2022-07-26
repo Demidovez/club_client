@@ -1,32 +1,32 @@
 .container {
-    margin: 10px 25px 25px 25px;
-    padding: 15px 25px 25px;
-    border-radius: 10px;
-    background: white;
-    flex: 1;
-    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  margin: 0px 25px 25px 25px;
+  padding: 15px 25px 25px;
+  border-radius: 10px;
+  background: white;
+  flex: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 
-    h1 {
-        margin-bottom: 0px;
-    }
+  h1 {
+    margin-bottom: 0px;
+  }
 
-    .author_wrapper {
-        p {
-            font-size: 12px;
-            opacity: 0.5;
-        }
-    }
-    
+  .author_wrapper {
     p {
-        font-size: 16px;
+      font-size: 12px;
+      opacity: 0.5;
     }
+  }
 
-    img {
-        margin-bottom: 20px;
-    }
+  p {
+    font-size: 16px;
+  }
 
-    .row_image {
-        display: flex;
-        gap: 20px;
-    }
+  img {
+    margin-bottom: 20px;
+  }
+
+  .row_image {
+    display: flex;
+    gap: 20px;
+  }
 }

@@ -1,4 +1,3 @@
-import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 import Header from "../Header/Header";
 import Sidebar from "../Sidebar/Sidebar";
 
@@ -14,7 +13,6 @@ function Layout({ children }: IProps) {
       <Sidebar />
       <div className={styles.content}>
         <Header />
-        <Breadcrumbs />
         <div>{children}</div>
       </div>
     </div>

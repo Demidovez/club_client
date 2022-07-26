@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .image_wrapper {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    img {
+      width: 100%;
+    }
+  }
+}
