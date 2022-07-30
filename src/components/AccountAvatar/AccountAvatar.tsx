@@ -5,7 +5,10 @@ function AccountAvatar() {
   return (
     <div className={styles.container}>
       <div className={styles.image_wrapper}>
-        <img src="https://club.nikolaydemidovez.by/images/avatars/avatar.jpeg" />
+        <img
+          src="https://club.nikolaydemidovez.by/images/avatars/avatar.jpeg"
+          alt="avatar"
+        />
       </div>
       <IoChevronDownOutline size="18" color="gray" />
     </div>

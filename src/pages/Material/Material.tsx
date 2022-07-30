@@ -22,7 +22,10 @@ function Material() {
           дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал
           инициал за пояс и пустился в дорогу.
         </p>
-        <img src="https://club.nikolaydemidovez.by/images/materials/buhgalter.jpeg" />
+        <img
+          src="https://club.nikolaydemidovez.by/images/materials/buhgalter.jpeg"
+          alt="buhgalter"
+        />
         <p>
           Взобравшись на первую вершину курсивных гор, бросил он последний
           взгляд назад, на силуэт своего родного города Буквоград, на заголовок
@@ -57,7 +60,10 @@ function Material() {
         </p>
 
         <div className={styles.row_image}>
-          <img src="https://club.nikolaydemidovez.by/images/materials/calculator.jpeg" />
+          <img
+            src="https://club.nikolaydemidovez.by/images/materials/calculator.jpeg"
+            alt="calculator"
+          />
           <p>
             Грустный риторический вопрос скатился по его щеке и он продолжил
             свой путь. По дороге встретил текст рукопись. Она предупредила его:

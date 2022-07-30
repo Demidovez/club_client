@@ -1,0 +1,20 @@
+.container {
+  span {
+    color: #d63031;
+
+    &.enabled {
+      color: #00b894;
+    }
+  }
+
+  .btn {
+    background-color: #00b894;
+    border-color: #00b894;
+    color: white;
+
+    &.btn_active {
+      background-color: #d63031;
+      border-color: #d63031;
+    }
+  }
+}
