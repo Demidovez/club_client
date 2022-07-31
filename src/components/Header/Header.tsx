@@ -15,9 +15,7 @@ function Header() {
   useEffect(() => {
     const countUrlItems = pathname.split("/").slice(1).length;
 
-    console.log(pathname, pathname.split("/").slice(1));
-
-    setIsParentPage(countUrlItems == 1);
+    setIsParentPage(countUrlItems === 1);
   }, [pathname]);
 
   return (

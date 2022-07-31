@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound/NotFound";
 import Settings from "./pages/Settings/Settings";
 import User from "./pages/User/User";
 import Users from "./pages/Users/Users";
+import { PAGES_PATH } from "./types/types";
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
         <Route path="add" element={<AddMaterial />} />
         <Route path="users" element={<Users />} />
         <Route path="settings" element={<Settings />} />
-        <Route path="*" element={<NotFound />} />
+        {["*", PAGES_PATH.notFound].map((path) => (
+          <Route path={path} element={<NotFound />} key={path} />
+        ))}
       </Routes>
     </Layout>
   );

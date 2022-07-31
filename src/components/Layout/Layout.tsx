@@ -13,7 +13,7 @@ function Layout({ children }: IProps) {
       <Sidebar />
       <div className={styles.content}>
         <Header />
-        <div>{children}</div>
+        <div className={styles.page}>{children}</div>
       </div>
     </div>
   );
