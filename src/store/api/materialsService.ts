@@ -1,10 +1,14 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { IMaterialCategory, IMaterialsData } from "../../types/types";
+import {
+  IMaterial,
+  IMaterialCategory,
+  IMaterialsData,
+} from "../../types/types";
 
 export const materialsAPI = createApi({
   reducerPath: "materialsAPI",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://club.nikolaydemidovez.by:8010/",
+    baseUrl: "https://club.nikolaydemidovez.by/api/",
   }),
   endpoints: (builder) => ({
     getCategories: builder.query<IMaterialCategory[], void>({
@@ -25,7 +29,26 @@ export const materialsAPI = createApi({
         return response;
       },
     }),
+    getMaterialOne: builder.query<IMaterial, string | undefined>({
+      query: (material) => {
+        if (material) {
+          return `get_material_by_name/${material}`;
+        } else {
+          throw new Error("Not defined material!");
+        }
+      },
+      transformResponse: (response: IMaterial) => {
+        if (!response) {
+          throw new Error("Not found material!");
+        }
+        return response;
+      },
+    }),
   }),
 });
 
-export const { useGetCategoriesQuery, useGetMaterialsQuery } = materialsAPI;
+export const {
+  useGetCategoriesQuery,
+  useGetMaterialsQuery,
+  useGetMaterialOneQuery,
+} = materialsAPI;

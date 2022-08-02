@@ -9,19 +9,13 @@ function Category() {
   const { name } = useParams();
   const navigate = useNavigate();
 
-  // TODO: name || "" - temp decision
-  const {
-    data: materialsData,
-    // isLoading,
-    // error,
-    isError,
-  } = useGetMaterialsQuery(name);
+  const { data: materialsData, isError } = useGetMaterialsQuery(name);
 
   useEffect(() => {
     if (isError) {
       navigate(PAGES_PATH.notFound);
     }
-  }, [isError, materialsData, navigate]);
+  }, [isError, navigate]);
 
   const goToMaterial = (material: string) => {
     navigate(`/material/${material}`);

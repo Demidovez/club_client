@@ -20,15 +20,19 @@ export interface IMaterial {
   name: string;
   title: string;
   createdAt: string;
+  data: object;
+  isActive: boolean;
   desc: string;
   image: string;
   users_liked_ids: string[];
   comments_ids: string[];
 }
 
+export type TMaterialCard = Omit<IMaterial, "data" | "isActive">;
+
 export interface IMaterialsData {
   category: string;
-  data: IMaterial[];
+  data: TMaterialCard[];
 }
 
 export const PAGES_PATH = {

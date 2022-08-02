@@ -1,0 +1,32 @@
+.container {
+  .header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .user {
+    font-weight: 800;
+  }
+
+  .date {
+    font-size: 12px;
+    opacity: 0.6;
+  }
+
+  .text {
+    font-size: 15px;
+    margin: 7px 0;
+  }
+
+  .answer {
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.6;
+    font-size: 12px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

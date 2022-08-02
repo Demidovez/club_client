@@ -1,5 +1,5 @@
 import { MouseEventHandler, useState } from "react";
-import { IMaterial } from "../../types/types";
+import { TMaterialCard } from "../../types/types";
 import styles from "./CardMaterial.module.scss";
 import {
   IoChatbubbleEllipsesOutline,
@@ -8,7 +8,7 @@ import {
 } from "react-icons/io5";
 
 interface IProps {
-  data: IMaterial;
+  data: TMaterialCard;
   onClick: (material: string) => void;
 }
 
